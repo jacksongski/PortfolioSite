@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jackson Glisczinski</title>
+    <link rel="icon" type="image/gif/png" href="./assets/logo.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="navbar">
+      <a href="./index.html" class="navItems">HOME</a>
+      <a href="./index.html#abt" class="navItems">ABOUT</a>
+      <a href="./index.html#wrk" class="navItems">WORK</a>
+      <a href="./index.html#cntct" class="navItems">CONTACT</a>
+    </div>
+
+    <div id="container">
+      <div class="bars" style="right: 52%"></div>
+      <div style="margin: 24px 100%"></div>
+      <div class="bars bar1" style="left: 60%"></div>
+      <div class="bars bar2" style="right: 68%"></div>
+      <div class="bars" style="left: 52%"></div>
+      <div style="margin: 100px 100%"></div>
+
+      <div style="margin: auto; width: 800px">
+        <h1 style="color: #cdcfff">EPIC MAPS</h1>
+        <h2>Internal Tool For IT Team</h2>
+
+        <div style="margin: 80px"></div>
+        <div>
+          <h3>
+            On the Verona, WI campus, Epic employs over 10,000 people and in
+            over 30 different buildings. As a member of the Computer and
+            Techonology Services department, I spend a good portion of my time
+            traversing the campus and making deliveries of computer equipment
+            for employees. With each building having 150+ offices, navigating
+            can be extremely time consuming.
+          </h3>
+          <br />
+          <h3>
+            Epic’s internal website currently has a map system, but it is very
+            limited as you can only look up one office at a time. My team does
+            deliveries for upwards of 20 people per run, so it was a huge hassle
+            to search for each office individually.
+          </h3>
+          <br />
+          <h3>
+            I fully developed an internal tool that allows for input of any
+            number of offices, and will ouput a webpage with every room in every
+            building highlighted.
+          </h3>
+        </div>
+
+        <div style="margin: 120px"></div>
+        <div>
+          <h2 style="color: #cdcfff">Demo</h2>
+          <div
+            style="
+              width: 100%;
+              height: 500px;
+              background-color: rgba(160, 105, 248, 0.692);
+            "
+          >
+            <h3>coming soon</h3>
+          </div>
+        </div>
+
+        <div style="margin: 120px"></div>
+        <div>
+          <h2 style="color: #cdcfff">Features and Improvements</h2>
+          <br />
+          <h3>
+            When I first created this tool, it started off as very barebones. It
+            would only work by taking input from a seperate internal tool
+            webpage, and would display a hardly readable list of map images.
+            Here is a timeline of the features and improvements I added.
+          </h3>
+          <br />
+          <div style="margin-left: 40px">
+            <h4>Zoom</h4>
+            <h3>
+              With different employees working on different sized screens, with
+              different workflows (full-screen view vs. split-screen), I added a
+              slider bar to adjust the zoom level of the maps. This way, you
+              could easily zoom in closer on a map, or view multiple maps at a
+              time.
+            </h3>
+            <br />
+            <h4>Labels</h4>
+            <h3>
+              Some of the maps were hard to read, and it was hard to tell the
+              building and floor level of a map image. I added map labels to
+              each map, and I found the geometric center of each room to apply
+              room number labels.
+            </h3>
+
+            <br />
+            <h4>Custom Input</h4>
+            <h3>
+              Most deliveries were done based off a seperate internal tool, but
+              a lot were done based off of seperate office lists. I added a
+              feature to allow for custom input based on a user-entered list of
+              offices. It also accounted for errors such as misformatting and
+              building abbrevations.
+            </h3>
+            <br />
+            <h4>Check-Off</h4>
+            <h3>
+              When delivering to mulitple offices on a floor, it can be hard to
+              keep track of which rooms you have already been to. I added a
+              check-off feature, such that when you click on an office on the
+              map, it will become greyed out. Once all offices on a map image
+              are checked, the entire image will become greyed out
+            </h3>
+            <br />
+            <h4>Printer-Friendly Maps</h4>
+            <h3>
+              Some of my colleagues prefer to leave their laptop behind during
+              deliveries, as it takes up too much space. They would try to print
+              the page, but it became very difficult to read on paper. I added a
+              “Print Maps” button to reformat the webpage in a printable format.
+            </h3>
+            <br />
+            <h4>Hover</h4>
+            <h3>
+              With the interactivity of Maps and the other internal tool, there
+              was a lot of clicking back and forth between tabs. To reduce this,
+              when a user hovered over an office name on the other tool, a
+              thumbnail pop-up image of that room highlighted on a map would
+              appear.
+            </h3>
+            <br />
+          </div>
+        </div>
+
+        <div style="margin: 120px"></div>
+        <h2 style="color: #cdcfff">Next Steps - Maps 2.0</h2>
+        <br />
+        <h3>
+          This tool has made it drastically easier for my colleagues to make
+          deliveries. It also serves as a great visualization tool to quickly
+          see what buildings have yet to be delivered to. That being said, there
+          are still plenty of improvements that can be made.
+        </h3>
+        <br />
+        <h3>
+          I am currently in the process of revamping the logic of the entire
+          component in order to reduce load times and account for future
+          updates. I am drastically improving the appearance and readability of
+          each map image, as I am adding labels to every room, rather than just
+          the highlighted ones. I’ll also be using more color and interactivity
+          to each room, to make it more in line with the appearance and
+          functionality of Epic’s current map system.
+        </h3>
+      </div>
+
+      <div style="margin-top: 100px">
+        <div style="margin: 24px 100%"></div>
+        <div class="bars" style="right: 52%"></div>
+        <div style="margin: 30px 100%" id="abt"></div>
+        <div class="bars bar1" style="right: 68%"></div>
+        <div class="bars" style="left: 52%"></div>
+        <div id="cntct" style="margin: 30px 100%"></div>
+        <div class="bars bar2" style="left: 78%"></div>
+      </div>
+    </div>
+  </body>
+</html>
