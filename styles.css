@@ -16,6 +16,7 @@ a:link {
 
 img {
   border-radius: 16px;
+  animation: moveInRight 1s ease-out;
 }
 
 button {
@@ -47,6 +48,7 @@ h1 {
   color: #f2f2f2;
   margin: 24px 0;
   transition: all 0.5s ease-out;
+  animation: moveInLeft 1.7s ease-out;
 }
 
 h1:hover {
@@ -67,6 +69,7 @@ h2 {
   color: #f2f2f2;
   margin: 8px 0;
   transition: all 0.5s ease-out;
+  animation: moveInRight 1.5s ease-out;
 }
 
 h2:hover {
@@ -86,6 +89,7 @@ h3 {
   line-height: 1.9rem;
   color: #f2f2f2;
   margin: 8px 0;
+  animation: moveInRight 0.5s ease-out;
 }
 
 h4 {
@@ -97,6 +101,7 @@ h4 {
   color: #cdcfff;
   align-self: flex-end;
   margin: 8px 0;
+  animation: moveInLeft 1s ease-out;
 }
 
 #container {
@@ -146,6 +151,7 @@ h4 {
   opacity: 1;
   visibility: visible;
   transition: all 0.3s;
+  animation: moveInRight 1s ease-out;
 }
 
 .overlay:hover {
@@ -154,7 +160,7 @@ h4 {
   transition: all 0.5s;
 }
 
-.proj:visited  {
+.proj:visited {
   box-shadow: #ffffff -3px 3px 8px;
 }
 
@@ -211,6 +217,7 @@ textarea {
     inset 0px 2px 5px rgba(255, 255, 255, 0.25);
   border-radius: 8px;
   background: #4b3f72;
+  animation: moveInRight 1s ease-out;
 }
 
 .bar1 {
@@ -219,6 +226,7 @@ textarea {
 
 .bar2 {
   background: #313150;
+  animation: moveInLeft 1s ease-out;
 }
 
 #home {
@@ -300,5 +308,33 @@ textarea {
   #container {
     padding: 0;
     width: 100%;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem) skew(10deg);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }
